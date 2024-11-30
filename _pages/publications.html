@@ -11,26 +11,8 @@ author_profile: true
 
 {% include base_path %}
 
-<!-- New style rendering if publication categories are defined -->
-{% if site.publication_category %}
-  {% for category in site.publication_category  %}
-    {% assign title_shown = false %}
-    {% for post in site.publications reversed %}
-      {% if post.category != category[0] %}
-        {% continue %}
-      {% endif %}
-      {% unless title_shown %}
-        <h2>{{ category[1].title }}</h2><hr />
-        {% assign title_shown = true %}
-      {% endunless %}
-      {% include archive-single.html %}
-    {% endfor %}
-  {% endfor %}
-{% else %}
-  {% for post in site.publications reversed %}
-    {% include archive-single.html %}
-  {% endfor %}
-{% endif %}
+I am a junior student from Wuhan, Hubei, studying at the University of Science and Technology of Macau. I consider myself relatively introverted, but I have a passion for traveling and making new friends. I have participated in several internships and have project experience related to finance. Additionally, I am a member of the SPC club at my school.
+For my five-year plan, I aim to participate in an internship every summer and work on projects during longer breaks to enhance my personal skills. At the same time, I want to improve my GPA and maintain it.
 
 
 
